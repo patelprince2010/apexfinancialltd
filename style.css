@@ -1,0 +1,217 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+.navbar-brand img{
+  height: 50px !important;
+
+}
+.bg-home {
+  width: 100%;
+  height: 80vh;
+  background-image: linear-gradient(#f8f8f8de, #cac8c861), url(https://www.warlocktechnologies.com/website_warlock/static/src/img/warlock.webp);
+  background-attachment: fixed;
+  background-size: cover;
+
+}
+
+.text-h2 {
+  font-size: 60px;
+}
+
+.box1 p {
+  line-height: 28px;
+  position: relative;
+}
+
+
+/* .box1:hover{
+    color: white !important; 
+    
+} */
+.box1 {
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+  /* Smooth background color transition */
+}
+
+.box1:hover {
+  background-color: #007bff;
+  /* Change this to your desired hover color */
+  color: white;
+}
+
+.box1::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #007bff;
+  /* Adjust the hover color here */
+  transition: top 0.3s;
+  z-index: 0;
+  /* Ensure this stays behind the content */
+}
+
+.box1:hover::before {
+  top: 0;
+  /* Move the pseudo-element to cover the box */
+}
+
+.box1 h3,
+.box1 p,
+.box1 i {
+  position: relative;
+  /* Ensure content is above the pseudo-element */
+  z-index: 1;
+  /* Bring content above the background */
+  /* Change text color for better visibility on hover */
+}
+
+.About {
+  background-color: #f6f9fe;
+}
+
+.about-text {
+  background: #e7f1fd;
+  width: 89px;
+  height: 4vh;
+  border-radius: 50px;
+
+}
+
+.progress {
+  height: 10px !important;
+}
+
+.clients {
+  background: #f1f6fe;
+}
+
+.box-text {
+  border: 1px solid #deebfd;
+
+}
+
+.box-text i {
+  background: #e7f1fd;
+  border-radius: 5px;
+  border: 1px solid #9fc3f5c0;
+}
+
+
+.box-text {
+  transition: all 0.3s ease;
+  /* Smooth transition */
+  padding: 20px;
+  border-radius: 8px;
+  /* Rounded corners */
+}
+
+/* Hover effect */
+.box-text:hover {
+  box-shadow: 0 4px 8px rgba(135, 217, 253, 0.313), 0 6px 20px rgba(126, 221, 255, 0.273);
+  /* Add shadow */
+
+}
+
+.box-text:hover h3 {
+  color: #007bff;
+
+}
+
+.box-text:hover i {
+  border: 1px solid #007bff;
+}
+
+.testimonials {
+  background-image: linear-gradient(#28292abf, #000000c9), url(img/testimonials-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+.slide img {
+  height: 100px;
+  width: 100px;
+  border: 8px rgba(140, 139, 139, 0.532) solid;
+}
+
+
+.slide1-text i {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.carousel-indicators button {
+  width: 15px !important;
+  height: 15px !important;
+  bottom: 42px !important;
+  border-radius: 50% !important;
+}
+
+.text-1 p{
+  color: gray;
+}
+
+.frequently{
+  background-color: #f6f9fe;
+
+}
+
+.address i{
+  border: 2px dotted;
+}
+
+.freq-text{
+  width: 80%;
+  margin: auto;
+  border-bottom: 1px #d4e5fc solid;
+  
+}
+
+.card{
+  background-color: #f6f9fe !important;
+  border: none !important;
+}
+.newslatter{
+  background-color: #f6f9fe;
+}
+
+.Useful-links{
+  list-style-type: disc; 
+}
+
+.footer-footer{
+  background-color: #f6f9fe;
+}
+
+.a-c-w {
+  position: relative;
+}
+
+.portfo-text {
+  position: absolute;
+  opacity: 0;
+  bottom: 0%;
+  z-index: 99;
+  margin: auto;
+  color: #000;
+  color: #555555;
+  transition: all 0.5s;
+  left: 5%;
+  right: 5%;
+  text-align: center;
+  bottom: 5%;
+}
+
+.a-c-w:hover .portfo-text {
+  background-color: rgba(255, 255, 255, 0.9);
+  opacity: 1;
+}
